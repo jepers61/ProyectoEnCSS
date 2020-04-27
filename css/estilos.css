@@ -1,0 +1,431 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/*html,*/
+body{
+  font-family: 'Lobster', cursive;
+}
+header{
+  width: 100%;
+  background-color: #BC554E;
+  text-align: center;
+}
+h1{
+  width: 100%;
+  color: beige;
+  font-size: 2.8em;
+  text-align: center;
+
+}
+nav {
+  margin: 0px;
+  padding: 10px;
+  border: 0;
+  vertical-align: baseline;
+}
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+
+}
+li{
+  display: inline;
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+a{  
+  text-decoration: none;
+}
+main{
+  text-align: center;
+}
+#principal{
+  text-align: center;
+}
+#contenidoPrincipal{
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 75%;
+  margin: 0px auto;
+  border-radius: 10px;
+  background-color: RGBA(253,252,237,0.5);
+  padding: 10px;
+  font-size: 1.2em;
+}
+.principal img{
+  width: 100%;
+}
+.playa{
+  background-color: #FDFCED;
+}
+.playa .imagen-principal img{
+  display: none;
+}
+.parque{
+  background-color: #EFF9EA;
+}
+.parque .imagen-principal img{
+  display: none;
+}
+.rio{
+  background-color: #FCF2EA;
+}
+.rio .imagen-principal img{
+  display: none;
+}
+.boton{
+  background-color: #F7B888;
+  border-radius: 15px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+}
+.lugares img:hover{
+  transform: scale(1.1,1.1);
+  -webkit-filter: brightness(1.2);
+}
+
+@media (max-width: 768px){
+  .playa .imagen-secundaria img{
+    width: 50%;
+    border-radius: 20px;
+  }
+  .playa .descripcion{
+    font-size: 1.2em;
+  }
+  .playa .descripcion h2{
+    font-size: 4em;
+  }
+  .parque .imagen-secundaria img{
+    width: 50%;
+    border-radius: 20px;
+  }
+  .parque .descripcion{
+    font-size: 1.2em;
+  }
+  .parque .descripcion h2{
+    font-size: 3em;
+  }
+  .rio .imagen-secundaria img{
+    width: 50%;
+    border-radius: 20px;
+  }
+  .rio .descripcion{
+    font-size: 1.2em;
+  }
+  .rio .descripcion h2{
+    font-size: 3em;
+  }
+  .informacion{
+    text-align: center;
+  }
+  .informacion .tel{
+    margin-top: 20px;
+  }
+  .contacto{
+    background-color: #FDFCED;
+    border: 1px solid #F7B888;
+    border-radius: 10px;
+    width: 70%;
+    height: 400px;
+    margin: 30px auto;
+  }
+  .contacto h3{
+    text-align: center;
+  }
+  .contacto p{
+    text-align: center;
+    margin: 10px auto;
+  }
+  p input{
+    height: 40px;
+  }
+  #email{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #F7B888; 
+  }
+  p textarea{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #F7B888; 
+  }
+  .boton{
+    width: 20%;
+    height: 35px;
+  }
+}
+
+@media (min-width: 769px){
+  header{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  h1{
+    text-align: left;
+    width: 44%;
+    margin-left: 2%;
+    margin-right: 0;
+  }
+  ul{
+    width: 100%;
+    padding-top: 15px;
+  }
+  a{
+    font-size: 1.4em;
+  }
+  li{
+    text-align: center;
+  }
+  #contenidoPrincipal{
+    margin-top: 5%;
+  }
+  .playa .contenido{
+    width: 100%;
+  }
+  .playa .descripcion{
+    float: left;
+    margin: auto;
+    width: 40%;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .playa .imagen-secundaria img{
+    width: 35%;
+    margin: 5%;
+    border-radius: 20px;
+  }
+  .playa .descripcion h2{
+    font-size: 5em;
+  }
+  .parque .contenido{
+    width: 100%;
+  }
+  .parque .descripcion{
+    float: left;
+    margin: auto;
+    width: 40%;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .parque .imagen-secundaria img{
+    width: 35%;
+    margin: 5%;
+    border-radius: 20px;
+  }
+  .parque .descripcion h2{
+    font-size: 5em;
+  }
+  .rio .contenido{
+    width: 100%;
+  }
+  .rio .descripcion{
+    float: left;
+    margin: auto;
+    width: 40%;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .rio .imagen-secundaria img{
+    width: 35%;
+    margin: 5%;
+    border-radius: 20px;
+  }
+  .rio .descripcion h2{
+    font-size: 5em;
+  }
+  .info{
+    width: 100%;
+    padding: 5%;
+  }
+  .informacion .tel{
+    margin-top: 20px;
+  }
+  .info .informacion{
+    float: left;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+  }
+  .contacto{
+    float: right;
+    background-color: #FDFCED;
+    border: 1px solid #F7B888;
+    border-radius: 10px;
+    width: 40%;
+    height: 400px;
+    margin-right: 15%;
+    margin-bottom: 5%;
+  }
+  .contacto h3{
+    text-align: center;
+  }
+  .contacto p{
+    text-align: center;
+    margin: 10px;
+  }
+  .boton{
+    width: 30%;
+    height: 35px;
+  }
+  p input{
+    height: 40px;
+  }
+  #email{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #F7B888; 
+  }
+  p textarea{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #F7B888; 
+  }
+}
+
+@media (min-width: 1200px){
+  header{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  h1{
+    text-align: left;
+    width: 30%;
+    margin: 25px;
+  }
+  ul{
+    padding-top: 25px;
+  }
+  a{
+    font-size: 1.4em;
+  }
+  .playa{
+    width: 100%;
+  }
+  .playa .contenido{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .playa .imagen-principal{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .playa .imagen-principal img{
+    display: block;
+    border-radius: 20px;
+    width: 85%;
+    margin: auto;
+  }
+  .playa .descripcion{
+    width: 30%;
+    margin-top: 50px;
+    padding: 0%;
+
+  }
+  .playa .imagen-secundaria{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .playa .imagen-secundaria img{
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+    float: right;
+  }
+  .playa .descripcion h2{
+    font-size: 5em;
+  }
+  .parque{
+    width: 100%;
+  }
+  .parque .contenido{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .parque .imagen-principal{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .parque .imagen-principal img{
+    display: block;
+    border-radius: 20px;
+    width: 85%;
+    margin: auto;
+  }
+  .parque .descripcion{
+    width: 30%;
+    margin-top: 50px;
+    padding: 0%;
+
+  }
+  .parque .imagen-secundaria{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .parque .imagen-secundaria img{
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+    float: right;
+  }
+  .parque .descripcion h2{
+    font-size: 5em;
+  }
+  .rio{
+    width: 100%;
+  }
+  .rio .contenido{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .rio .imagen-principal{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .rio .imagen-principal img{
+    display: block;
+    border-radius: 20px;
+    width: 85%;
+    margin: auto;
+  }
+  .rio .descripcion{
+    width: 30%;
+    margin-top: 50px;
+    padding: 0%;
+
+  }
+  .rio .imagen-secundaria{
+    display: block;
+    width: 30%;
+    padding: 2%;
+  }
+  .rio .imagen-secundaria img{
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+    float: right;
+  }
+  .rio .descripcion h2{
+    font-size: 5em;
+  }
+}
